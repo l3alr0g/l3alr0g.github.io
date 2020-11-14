@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Ubuntu", sans-serif;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+body {
+    height: 100vh;
+    background: url(pic/bg.png) no-repeat center;
+    background-color: black;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.global-container{
+    background: rgba(60, 63, 75, 0.24);
+    border-radius: 10px;
+    display: flex;
+    padding: 40px;
+}
+
+/* profile card */
+.profile-surface{
+    width: 400px;
+    text-align: center;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-left: 20px;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+.surface-header{
+    background: #2c3a47;
+    padding: 60px;
+}
+
+.pic{
+    display: inline-block;
+    padding: 5px;
+    background: linear-gradient(100deg, rgb(217, 44, 126), rgb(249, 157, 76));
+    margin: auto;
+    border-radius: 50%;
+    background-size: 200% 200%;
+    animation: animated-gradient 2s linear infinite, animated-out 0.2s;
+}
+
+.pic:hover{
+    display: inline-block;
+    padding: 9px;
+    animation: animated-in 0.2s;
+}
+
+@keyframes animated-out{
+    from{
+        padding: 9px;
+    }
+    to{
+        padding: 5px;
+    }
+}
+@keyframes animated-in{
+    from{
+        padding: 5px;
+    }
+
+    to{
+        padding: 9px;
+    }
+}
+
+@keyframes animated-gradient{
+  25%{
+    background-position: left bottom;
+  }
+  50%{
+    background-position: right bottom;
+  }
+  75%{
+    background-position: right top;
+  }
+  100%{
+    background-position: left top;
+  }
+}
+
+.pic img{
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.name{    color: #f2f2f2;
+    font-size: 28px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.pseudo{
+    color: #f2f2f298;
+    font-size: 20px;
+    font-weight: 300;
+    margin: 10px 0;
+}
+  
+.desc{
+    font-size: 18px;
+    color: #74a8b8;
+}
+  
+.sm{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+  
+.sm a{
+    color: #f2f2f2;
+    width: 56px;
+    font-size: 22px;
+    transition: .3s linear;
+}
+  
+.sm a:hover{
+    color: #74a8b8;
+}
+  
+.contact-bt{
+    display: inline-block;
+    padding: 12px 50px;
+    color: #74a8b8;
+    border: 2px solid #74a8b8;
+    border-radius: 15px;
+    margin-top: 16px;
+    transition: .3s linear;
+}
+  
+.contact-bt:hover{
+    background: #74a8b8;
+    color: #f2f2f2;
+}
+  
+.surface-footer{
+    background: #f4f4f4;
+    padding: 60px 10px;
+}
+  
+.numbers{
+    display: flex;
+    align-items: center;
+}
+  
+.p-item{
+    flex: 1;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #e66767;
+}
+  
+.p-item span{
+    display: block;
+    color: #2c3a47;
+    font-size: 30px;
+}
+  
+.border{
+    width: 1px;
+    height: 30px;
+    background: #bbb;
+}
+  
+/* menu */
+
+.middle {
+    position: relative;
+    margin-right: 20px;
+}
+
+.menu{
+    width: 350px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+.m-item{
+    border-top: 1px solid #2c3a47;
+    overflow: hidden;
+}
+
+.bt{
+    display: block;
+    padding: 16px 20px;
+    background: #2c3a47;
+    color: white;
+    position: relative;
+}
+
+.bt::before{
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background: #2c3a47;
+    left: 20px;
+    bottom: -7px;
+    transform: rotate(45deg);
+}
+
+.bt i{
+    margin-right: 10px;
+}
+
+.smenu{
+    background: #4d667c;
+    overflow: hidden;
+    transition: max-height 0.3s;
+    max-height: 0;
+}
+
+.smenu a{
+    display: block;
+    padding: 16px 26px;
+    color: white;
+    font-size: 14px;
+    margin: 4px 0;
+    position: relative;
+}
+
+.smenu a:before{
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background: #2c3a47;
+    left: 0;
+    top: 0;
+    transition: 0.3s;
+    opacity: 0;
+}
+.smenu a:hover:before{
+    opacity: 1;
+}
+.m-item:target .smenu{
+    max-height: 10em;
+}
