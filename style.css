@@ -91,6 +91,13 @@ body {
     font-weight: 600;
     margin: 10px 0;
 }
+
+.pseudo{
+    color: #f2f2f298;
+    font-size: 20px;
+    font-weight: 300;
+    margin: 10px 0;
+}
   
 .desc{
     font-size: 18px;

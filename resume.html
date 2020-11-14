@@ -23,33 +23,45 @@
             justify-content: center;
             padding: 10px;
             width: 1500px;
+            height: 800px;
             border-radius: 10px;
             overflow: hidden;
+        }
+
+        .banner{
+            background: url(bg2.jpg) no-repeat top;
+            background-size: 100% 75%;
+            border-radius: 10px; 
+            margin: auto;
+            display: block;
+            align-content: center;
         }
         .pic{
             padding: 5px;
             background: rgb(255, 255, 255);
             border-radius: 50%;
-            margin: auto;
+            margin-top: 160px;
+            margin-left: 60px;
             display: inline-block;
         }
         .pic img{
             display: block;
-            width: 200px;
-            height: 200px;
+            width: 150px;
+            height: 150px;
             border-radius: 50%;
         }
         .left-pannel{
             background: #404b57;
-            padding: 60px;
             border-radius: 10px;
-            width: 400px;
-            justify-content: center;
+            width: 500px;
+            align-items: center;
         }
         .short-intro{
             flex: 1;
             font-size: 15px;
             color: white;
+            margin-top: 30px;
+            padding: 60px;
         }
         .short-intro span{
             font-size: 20px;
@@ -60,14 +72,18 @@
             background: #2d353d;
             padding: 60px;
             border-radius: 10px;
+            color: white;
+            margin-left: 10px;
         }
     </style>
 </head>
 <body>
     <div class="surface">
         <div class="left-pannel">
-            <div class="pic">
-                <img src="me.jpg" alt="">
+            <div class="banner">
+                <div class="pic">
+                    <img src="me.jpg" alt="">
+                </div>
             </div>
             <div class="short-intro">
                 <span>About Me</span>
@@ -76,7 +92,9 @@
             </div>
         </div>
         <div class="main-pannel">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum ullam perferendis aliquam omnis mollitia aspernatur molestias sit autem! Perspiciatis aliquam ratione, suscipit fugit tempore illum! Illum rem culpa eius architecto!
+            <div class="small-container">
+                HTML is cool and all but I still have literally no fucking idea what to write here and theorically I'm supposed to finish this website by tomorrow someone please help me I'm going to kill myself
+            </div>
         </div>
     </div>
 </body>
