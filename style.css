@@ -191,7 +191,7 @@ body {
     position: relative;
 }
 
-.bt:before{
+.bt::before{
     content: "";
     position: absolute;
     width: 14px;

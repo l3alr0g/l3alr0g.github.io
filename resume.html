@@ -7,6 +7,8 @@
     <style>
         *{
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-decoration: none;
+            overflow: hidden; /* no scroll bar */
         }
         body {
             height: 100vh; /* 100% of viewport height */
@@ -28,6 +30,17 @@
             overflow: hidden;
         }
 
+        .left-pannel{
+            background: #404b57;
+            border-radius: 10px;
+            display: inline-block;
+            width: auto;
+            min-width: 300px;
+            max-width: 400px;
+            align-items: center;
+            overflow: hidden;
+        }
+
         .banner{
             background: url(bg2.jpg) no-repeat top;
             background-size: 100% 75%;
@@ -40,40 +53,70 @@
             padding: 5px;
             background: rgb(255, 255, 255);
             border-radius: 50%;
-            margin-top: 160px;
-            margin-left: 60px;
+            margin: 160px 60px 0 60px;
             display: inline-block;
+            transition: .3s linear;
         }
-        .pic img{
+        .prof-pic{
             display: block;
+            background: url("me.jpg");
+            background-size: cover;
             width: 150px;
             height: 150px;
             border-radius: 50%;
         }
-        .left-pannel{
-            background: #404b57;
-            border-radius: 10px;
-            width: 500px;
-            align-items: center;
+        .prof-pic:hover{
+            background: rgb(94, 130, 177);
+            transition: .3s linear;
+            background: url("me_dark.png");
+            background-size: cover;
         }
+
+
         .short-intro{
             flex: 1;
             font-size: 15px;
+            margin-top: 10px;
             color: white;
-            margin-top: 30px;
             padding: 60px;
         }
         .short-intro span{
+            display: block;
             font-size: 20px;
             text-transform: uppercase;
             color: #74a8b8;
         }
         .main-pannel{
-            background: #2d353d;
             padding: 60px;
             border-radius: 10px;
             color: white;
             margin-left: 10px;
+        }
+        .line-container{
+            display: flex;
+        }
+
+        .inline-container{
+            background: #2d353d;
+            padding: 10px;
+            border-radius: 10px;
+            color: rgba(255, 255, 255, 0.651);
+            margin-left: 10px;
+            margin-bottom: 10px;
+            font-size: 15px;
+            width: auto;
+            transition: .3s linear;
+        }
+        .inline-container span{
+            display: block;
+            color: #74a8b8;
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+        .inline-container:hover{
+            background: #38414b;
+            color: white;
+            transition: .3s linear;
         }
     </style>
 </head>
@@ -82,18 +125,49 @@
         <div class="left-pannel">
             <div class="banner">
                 <div class="pic">
-                    <img src="me.jpg" alt="">
+                    <a href="index.html" target="_self">
+                        <div class="prof-pic"></div>
+                    </a>
                 </div>
             </div>
             <div class="short-intro">
                 <span>About Me</span>
-                <br>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus deserunt odio numquam expedita beatae, inventore nostrum ratione aliquid consequatur mollitia exercitationem reiciendis a incidunt fugiat accusamus repellendus eligendi alias ullam!
+                I was born in Toulouse, the capital of aviation and aerospace industries in France. I started travelling and meeting new people from a very young age which allowed me to discover and master many languages. Since highschool I have been learning and improving the skills I now have in programming and software development.
             </div>
         </div>
         <div class="main-pannel">
-            <div class="small-container">
-                HTML is cool and all but I still have literally no fucking idea what to write here and theorically I'm supposed to finish this website by tomorrow someone please help me I'm going to kill myself
+            <div class="line-container">
+                <div class="inline-container">
+                    <span>EDUCATION</span>
+                    I finished two years of preparatory class in 2020, and joined the ENSEEIHT where I am currently studying computer science (imperative programming, computer architecture), maths (optimization, probabilities and modeling) and physics (signal processing, partial differential equations).
+                    <br>
+                    <strong>ENSEEIHT - Toulouse, France</strong><br>
+                    Imperative programming, computer architecture, optimization,
+                    probabilities, modeling, signal processing, partial differential
+                    equations<br>
+                    <strong>CPGE - 2020 - Lycée Déodat de Séverac</strong><br>
+                    Math, Physics, engineering and computer science<br>
+                </div>
+                <div class="inline-container">
+                    <span>INTERESTS</span>
+                    I am a huge 3D graphics enthusiast, and I love creating physics engines and small rendering pipelines I can use later inside my games. Please feel free to check out my github profile, I use to publish my projects there once in a while.
+                </div>
+            </div>
+            <div class="line-container">
+                <div class="inline-container">
+                    <span>Project Excalibur</span>
+                    Project Excalibur was a Lawrence Livermore National Laboratory (LLNL) Cold War–era research program to develop an X-ray laser as a ballistic missile defense (BMD) for the United States.<br>
+                    The concept involved packing large numbers of expendable X-ray lasers around a nuclear device. When the device detonated, the X-rays released by the bomb would be focused by the lasers, each of which would be aimed at a target missile. When detonated in space, the lack of atmosphere to block the X-rays allowed attacks on missiles thousands of kilometers away.
+                </div>
+                <div class="inline-container">
+                    <span>Typhoon Vamco</span>
+                    Typhoon Vamco, known in the Philippines as Typhoon Ulysses, is currently a weakening Category 2-equivalent typhoon which earlier made a destructive landfall in the Philippines. The twenty-second named storm and tenth typhoon of the 2020 Pacific typhoon season, Vamco originated as a tropical depression northwest of Palau, where it slowly continued its northwest track until it made landfall in Quezon. The typhoon is now currently threatening South China and Vietnam.
+                </div>
+            </div>
+            
+            <div class="inline-container">
+                <span>Kingsbridge Road station</span>
+                Kingsbridge Road is an express station on the IND Concourse Line of the New York City Subway. Located within the Fordham Manor and Kingsbridge Heights neighborhoods in the Bronx, it is served by the D train at all times and the B train during rush hours only. It has three tracks and two island platforms.
             </div>
         </div>
     </div>
