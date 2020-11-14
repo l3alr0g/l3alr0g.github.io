@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        *{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            height: 100vh; /* 100% of viewport height */
+            background: url("bg.png") no-repeat center;
+            background-size: cover;
+            background-color: black;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+        .surface{
+            background-color: #2c3a47;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            width: 1500px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .pic{
+            padding: 5px;
+            background: rgb(255, 255, 255);
+            border-radius: 50%;
+            margin: auto;
+            display: inline-block;
+        }
+        .pic img{
+            display: block;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+        .left-pannel{
+            background: #404b57;
+            padding: 60px;
+            border-radius: 10px;
+            width: 400px;
+            justify-content: center;
+        }
+        .short-intro{
+            flex: 1;
+            font-size: 15px;
+            color: white;
+        }
+        .short-intro span{
+            font-size: 20px;
+            text-transform: uppercase;
+            color: #74a8b8;
+        }
+        .main-pannel{
+            background: #2d353d;
+            padding: 60px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="surface">
+        <div class="left-pannel">
+            <div class="pic">
+                <img src="me.jpg" alt="">
+            </div>
+            <div class="short-intro">
+                <span>About Me</span>
+                <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus deserunt odio numquam expedita beatae, inventore nostrum ratione aliquid consequatur mollitia exercitationem reiciendis a incidunt fugiat accusamus repellendus eligendi alias ullam!
+            </div>
+        </div>
+        <div class="main-pannel">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum ullam perferendis aliquam omnis mollitia aspernatur molestias sit autem! Perspiciatis aliquam ratione, suscipit fugit tempore illum! Illum rem culpa eius architecto!
+        </div>
+    </div>
+</body>
