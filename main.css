@@ -269,3 +269,35 @@ body {
 .m-item:target .smenu{
     max-height: 10em;
 }
+
+
+/*error page */
+.error-msg{
+    display: block;
+    font-size: 70px;
+    color: rgb(168, 184, 211);
+    background: rgba(52, 51, 58, 0.582);
+    border-radius: 10px;
+    padding: 20px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.error-bt{
+    display: block;
+    font-size: 17px;
+    color: rgb(184, 193, 212);
+    background: rgba(52, 51, 58, 0.466);
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.error-bt span{
+    display: block;
+    font-size: 20px;
+    color: rgb(209, 144, 106);
+    padding: 10px;
+    text-transform: uppercase;
+}
