@@ -1,11 +1,10 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Ubuntu", sans-serif;
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    overflow: hidden;
 }
 
 body {
@@ -18,33 +17,65 @@ body {
     display: flex;
 }
 
-.main-container{
+.global-container{
     background: rgba(60, 63, 75, 0.24);
-    display: flex;
-    padding: 10px;
-    width: 1500px;
-    height: 800px;
     border-radius: 10px;
+    display: flex;
+    padding: 40px;
 }
 
+
+.right-video-elem{
+    border-radius: 20px;
+    background: #2c3a47;
+    padding: 5px;
+    background: linear-gradient(100deg, rgb(253, 23, 131), rgb(249, 157, 76));
+    background-size: 200% 200%;
+    animation: animated-gradient 2s linear infinite;
+    margin-left: 20px;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+
+@keyframes animated-gradient{
+    25%{
+      background-position: left bottom;
+    }
+    50%{
+      background-position: right bottom;
+    }
+    75%{
+      background-position: right top;
+    }
+    100%{
+      background-position: left top;
+    }
+}
+
+
+
+/* menu */
 
 .middle {
     position: relative;
-    display: inline-block;
-    height: auto;
-    min-height: 400px;
-    align-items: center;
-    overflow: hidden;
-    border-radius: 10px;
-    margin-top: 25vh;
-    margin-left: 50px;
+    margin-right: 20px;
 }
 
 .menu{
-    position: relative;
     width: 350px;
     border-radius: 20px;
     overflow: hidden;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
 }
 
 .m-item{
@@ -107,44 +138,4 @@ body {
 }
 .m-item:target .smenu{
     max-height: 10em;
-}
-
-
-.right-container{
-    padding: 60px;
-    border-radius: 10px;
-    color: white;
-    margin-left: 10px;
-}
-
-.right-container video{
-    border-radius: 20px;
-    background: #2c3a47;
-    padding: 5px;
-    background: linear-gradient(100deg, rgb(253, 23, 131), rgb(249, 157, 76));
-    background-size: 200% 200%;
-    animation: animated-gradient 2s linear infinite;
-    margin-top: 6vh;
-    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
-    0 12.5px 10px rgba(0, 0, 0, 0.06),
-    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
-    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-    0 100px 80px rgba(0, 0, 0, 0.12);
-}
-
-
-@keyframes animated-gradient{
-    25%{
-      background-position: left bottom;
-    }
-    50%{
-      background-position: right bottom;
-    }
-    75%{
-      background-position: right top;
-    }
-    100%{
-      background-position: left top;
-    }
 }

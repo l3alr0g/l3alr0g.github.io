@@ -1,2 +1,2 @@
 # l3alr0g.github.io
- personal website
+a clean and simple personal website
