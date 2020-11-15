@@ -20,7 +20,6 @@
 body {
     height: 100vh;
     background: url(pic/bg.png) no-repeat center;
-    background-color: black;
     background-size: cover;
     display: flex;
     align-items: center;

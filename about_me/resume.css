@@ -7,7 +7,6 @@ body {
     height: 100vh; /* 100% of viewport height */
     background: url("../pic/bg.png") no-repeat center;
     background-size: cover;
-    background-color: black;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -46,7 +45,7 @@ body {
 }
 
 .banner{
-    background: url("../pic/bg2.jpg") no-repeat top;
+    background: url("../pic/banner.jpg") no-repeat top;
     background-size: 100% 75%;
     border-radius: 10px; 
     margin: auto;
