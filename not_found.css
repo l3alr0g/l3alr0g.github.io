@@ -1,0 +1,233 @@
+*{
+    font-family: "montserrat", sans-serif;
+}
+
+
+
+html body{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: url(pic/banner.jpg) no-repeat center;
+    background-size: cover;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.container{
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+h2{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+h3{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 25px;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    margin-top: 60px;
+}
+
+.back-bt{
+    display: inline-block;
+    margin-top: 16px;
+    color: #89c6d8;
+    border: 2px solid #89c6d8;
+    padding: 12px 24px ;
+    border-radius: 20px;
+    font-size: 18px;
+    text-decoration: none;
+    transition: .3s linear;
+}
+
+.back-bt:hover{
+    background: #89c6d8;
+    color: white;
+}
+.glitched-text{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.glitched-text .text{
+    color: #fff;
+    font-weight: 900;
+    font-size: 160px;
+    text-transform: uppercase;
+    transform: scale(2);
+    letter-spacing: 5px;
+    padding: 30px;
+}
+
+.glitched-text .text:before,
+.glitched-text .text:after{
+    position: absolute;
+    content: attr(data-text);
+    padding-top: 30px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0);
+    color: #fff;
+    overflow: hidden;
+}
+
+.glitched-text .text:before{
+    left: 3px;
+    text-shadow: -5px 0 red;
+    animation: glitch-1 2s 0s linear reverse infinite
+}
+.glitched-text .text:after{
+    left: -3px;
+    text-shadow: -5px 0 blue;
+    animation: glitch-2 2s 0s linear reverse infinite
+}
+
+@keyframes glitch-1 {
+    0% {
+      clip: rect(132px, auto, 201px, 30px);
+    }
+    5% {
+      clip: rect(17px, auto, 194px, 30px);
+    }
+    10% {
+      clip: rect(40px, auto, 166px, 30px);
+    }
+    15% {
+      clip: rect(87px, auto, 182px, 30px);
+    }
+    20% {
+      clip: rect(137px, auto, 161px, 30px);
+    }
+    25% {
+      clip: rect(34px, auto, 114px, 30px);
+    }
+    30% {
+      clip: rect(133px, auto, 174px, 30px);
+    }
+    35% {
+      clip: rect(76px, auto, 207px, 30px);
+    }
+    40% {
+      clip: rect(59px, auto, 230px, 30px);
+    }
+    45% {
+      clip: rect(29px, auto, 184px, 30px);
+    }
+    50% {
+      clip: rect(22px, auto, 167px, 30px);
+    }
+    55% {
+      clip: rect(67px, auto, 162px, 30px);
+    }
+    60% {
+      clip: rect(10px, auto, 205px, 30px);
+    }
+    65% {
+      clip: rect(78px, auto, 215px, 30px);
+    }
+    70% {
+      clip: rect(105px, auto, 113px, 30px);
+    }
+    75% {
+      clip: rect(15px, auto, 175px, 30px);
+    }
+    80% {
+      clip: rect(66px, auto, 139px, 30px);
+    }
+    85% {
+      clip: rect(133px, auto, 173px, 30px);
+    }
+    90% {
+      clip: rect(36px, auto, 228px, 30px);
+    }
+    95% {
+      clip: rect(68px, auto, 203px, 30px);
+    }
+    100% {
+      clip: rect(14px, auto, 200px, 30px);
+    }
+  }
+  @keyframes glitch-2 {
+    0% {
+      clip: rect(129px, auto, 136px, 30px);
+    }
+    5% {
+      clip: rect(36px, auto, 104px, 30px);
+    }
+    10% {
+      clip: rect(85px, auto, 166px, 30px);
+    }
+    15% {
+      clip: rect(91px, auto, 191px, 30px);
+    }
+    20% {
+      clip: rect(148px, auto, 238px, 30px);
+    }
+    25% {
+      clip: rect(38px, auto, 222px, 30px);
+    }
+    30% {
+      clip: rect(69px, auto, 154px, 30px);
+    }
+    35% {
+      clip: rect(98px, auto, 171px, 30px);
+    }
+    40% {
+      clip: rect(146px, auto, 134px, 30px);
+    }
+    45% {
+      clip: rect(134px, auto, 143px, 30px);
+    }
+    50% {
+      clip: rect(102px, auto, 180px, 30px);
+    }
+    55% {
+      clip: rect(119px, auto, 144px, 30px);
+    }
+    60% {
+      clip: rect(106px, auto, 199px, 30px);
+    }
+    65% {
+      clip: rect(141px, auto, 174px, 30px);
+    }
+    70% {
+      clip: rect(20px, auto, 178px, 30px);
+    }
+    75% {
+      clip: rect(133px, auto, 179px, 30px);
+    }
+    80% {
+      clip: rect(78px, auto, 152px, 30px);
+    }
+    85% {
+      clip: rect(35px, auto, 139px, 30px);
+    }
+    90% {
+      clip: rect(67px, auto, 170px, 30px);
+    }
+    95% {
+      clip: rect(71px, auto, 203px, 30px);
+    }
+    100% {
+      clip: rect(83px, auto, 140px, 30px);
+    }
+  }
+  
