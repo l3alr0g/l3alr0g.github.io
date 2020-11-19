@@ -23,6 +23,7 @@ html body{
     top: 50%;
     transform: translateY(-50%);
     text-align: center;
+    width: auto;
 }
 
 h2{
@@ -69,12 +70,27 @@ h3{
 .glitched-text .text{
     color: #fff;
     font-weight: 900;
-    font-size: 160px;
     text-transform: uppercase;
     transform: scale(2);
     letter-spacing: 5px;
     padding: 30px;
 }
+
+@media only screen  /* smartphone */
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+    .glitched-text .text{
+        font-size: 20vw;
+    }
+}
+
+@media only screen /* desktop */
+and (min-width : 1224px) {
+    .glitched-text .text{    
+        font-size: 160px;
+    }
+}
+
 
 .glitched-text .text:before,
 .glitched-text .text:after{
