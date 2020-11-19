@@ -23,15 +23,18 @@ body {
     background-size: cover;
     background-color: rgb(27, 28, 30);
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start; 
+    justify-content: center; /*aligns horizontally */
 }
 
 .global-container{
     background: rgba(60, 63, 75, 0.24);
     border-radius: 10px;
     display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
     padding: 40px;
+    margin-top: 3%;
 }
 
 /* profile card */
@@ -40,7 +43,7 @@ body {
     text-align: center;
     border-radius: 20px;
     overflow: hidden;
-    margin-left: 20px;
+    margin: 20px;
     box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
     0 6.7px 5.3px rgba(0, 0, 0, 0.048),
     0 12.5px 10px rgba(0, 0, 0, 0.06),
@@ -193,11 +196,11 @@ body {
 
 .middle {
     position: relative;
-    margin-right: 20px;
+    margin: 20px;
 }
 
 .menu{
-    width: 350px;
+    width: 400px;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),

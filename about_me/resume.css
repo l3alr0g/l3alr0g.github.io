@@ -1,31 +1,52 @@
 *{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-decoration: none;
-    overflow: hidden; /* no scroll bar */
+    box-sizing: content-box;
+    list-style: none;
 }
 body {
     height: 100vh; /* 100% of viewport height */
     background: url("../pic/bg.png") no-repeat center;
     background-size: cover;
     background-color: rgb(27, 28, 30);
-    align-items: center;
-    justify-content: center;
     display: flex;
+    align-items: flex-start; 
+    justify-content: center;
 }
+
+
 .surface{
     background-color: #2c3a47;
     display: flex;
+    align-items: center
+    justify-content: flex-start;
+    margin-top: 3%;
     padding: 10px;
     width: 1500px;
-    height: 800px;
+    
     border-radius: 10px;
-    overflow: hidden;
     box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
     0 6.7px 5.3px rgba(0, 0, 0, 0.048),
     0 12.5px 10px rgba(0, 0, 0, 0.06),
     0 22.3px 17.9px rgba(0, 0, 0, 0.072),
     0 41.8px 33.4px rgba(0, 0, 0, 0.086),
     0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+@media only screen  /* smartphone */
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+    .surface{
+        flex-wrap: wrap;
+        height: auto;
+    }
+}
+
+@media only screen /* desktop */
+and (min-width : 1224px) {
+    .surface{    
+    height: 800px;
+    }
 }
 
 .left-pannel{
@@ -109,18 +130,27 @@ body {
     color: #74a8b8;
 }
 .main-pannel{
-    padding: 60px;
+    padding: 10px;
     border-radius: 10px;
     color: white;
-    margin-left: 10px;
 }
+
 .line-container{
     display: flex;
+}
+
+@media only screen /* smartphone */
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+    .line-container{
+        flex-wrap: wrap;
+    }
 }
 
 .inline-container{
     background: #2d353d;
     padding: 10px;
+    width: auto;
     border-radius: 10px;
     color: rgba(255, 255, 255, 0.651);
     margin-left: 10px;
@@ -144,6 +174,7 @@ body {
     background: #2d353dc9;
     padding: 10px;
     border-radius: 10px;
+    width: auto;
     color: rgba(255, 255, 255, 0.301);
     margin-left: 10px;
     margin-bottom: 10px;
