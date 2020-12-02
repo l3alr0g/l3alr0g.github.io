@@ -31,9 +31,12 @@ body {
     padding: 20px;
     margin-left: auto;
     margin-right: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .right-video-elem{
+    margin: 10px;
     border-radius: 20px;
     background: #2c3a47;
     background: linear-gradient(100deg, rgb(253, 23, 131), rgb(249, 157, 76));
