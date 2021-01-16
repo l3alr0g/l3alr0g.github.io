@@ -41,11 +41,31 @@
             <iframe src="https://youtube.com/embed/8o2GkduvRW8" width="400" height = "225" frameborder="0"></iframe>
         </div>
         <div class="margin">
-            <a href="../pics/belize.png" target="_blank" class="img_link">
-                <div class="belize_poster">
-                    <div class="overlay"></div>
-                </div>
-            </a>
+            <img src="../pics/belize.png" alt="project poster" onclick="toggleEnlargement()" id="pic1">
         </div>
     </div>
+    <script>
+        img = document.getElementById("pic1");
+        box = document.getElementById("transparent_box");
+
+        function toggleEnlargement() {
+            if (img.style.width == "600px") {
+                resetPic();
+            } else {
+                enlargePic();
+            }
+        }
+        function enlargePic() {
+            img.style.width = "600px";
+            img.style.height = "1275px";
+            //box.style.height = "140%";
+            img.style.transition = "width 0.5s ease";
+        }
+        function resetPic() {
+            img.style.width = "400px";
+            img.style.height = "850px";
+            box.style.height = "100%";
+            img.style.transition = "width 0.5s ease";
+        }
+    </script>
 </body>
