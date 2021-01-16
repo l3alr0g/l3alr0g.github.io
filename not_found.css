@@ -8,7 +8,7 @@ html body{
     height: 100%;
     width: 100%;
     overflow: hidden;
-    background: url(pic/banner.jpg) no-repeat center;
+    background: url(pics/banner.jpg) no-repeat center;
     background-color: rgb(29,29,29);
     background-size: cover;
     min-height: 100vh;

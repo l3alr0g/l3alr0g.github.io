@@ -19,7 +19,7 @@
 
 body {
     height: 100vh;
-    background: url(pic/bg.png) no-repeat center;
+    background: url(pics/bg.png) no-repeat center;
     background-size: cover;
     background-color: rgb(27, 28, 30);
     display: flex;

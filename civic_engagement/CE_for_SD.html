@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <div class="global-container">
+    <div class="global-container" id="transparent_box">
         <div class="margin">
             <div class="middle">
                 <div class="menu">
@@ -28,17 +28,43 @@
                     <li class="m-item" id="PE">
                         <a href="#PE" class="bt"><i class="fas fa-briefcase"></i>Prof. Engagement</a>
                         <div class="smenu">
-                            <a href="./CE_for_SD.html" >Civic Engagement project</a>
                             <a href="../404.html">General professional network interv.</a>
                             <a href="../404.html">Specialized engineering network interv.</a>
                             <a href="../404.html">Languages</a>
                         </div>
                     </li>
+                    <li class="m-item" id='CE_for_SD'>
+                        <a href="./CE_for_SD.html" class="bt"><i class="fas fa-handshake"></i>Civic Engagement</a>
+                    </li>
                 </div>
             </div>
         </div>
         <div class="margin">
-            <img src="../pic/belize.png" alt="project poster">
+            <img src="../pics/belize.png" alt="project poster" onclick="toggleEnlargement()" id="pic1">
         </div>
     </div>
+    <script>
+        img = document.getElementById("pic1");
+        box = document.getElementById("transparent_box");
+
+        function toggleEnlargement() {
+            if (img.style.width == "600px") {
+                resetPic();
+            } else {
+                enlargePic();
+            }
+        }
+        function enlargePic() {
+            img.style.width = "600px";
+            img.style.height = "1275px";
+            //box.style.height = "140%";
+            img.style.transition = "width 0.5s ease";
+        }
+        function resetPic() {
+            img.style.width = "400px";
+            img.style.height = "850px";
+            box.style.height = "100%";
+            img.style.transition = "width 0.5s ease";
+        }
+    </script>
 </body>

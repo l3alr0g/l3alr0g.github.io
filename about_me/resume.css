@@ -6,7 +6,7 @@
 }
 body {
     height: 100vh; /* 100% of viewport height */
-    background: url("../pic/bg.png") no-repeat center;
+    background: url("../pics/bg.png") no-repeat center;
     background-size: cover;
     background-color: rgb(27, 28, 30);
     display: flex;
@@ -66,7 +66,7 @@ and (min-width : 1224px) {
 }
 
 .banner{
-    background: url("../pic/banner.jpg") no-repeat top;
+    background: url("../pics/banner.jpg") no-repeat top;
     background-size: 100% 75%;
     border-radius: 10px; 
     margin: auto;
@@ -101,7 +101,7 @@ and (min-width : 1224px) {
 }
 .prof-pic{
     display: block;
-    background: url("../pic/me.jpg");
+    background: url("../pics/me.jpg");
     background-size: cover;
     width: 150px;
     height: 150px;
@@ -110,7 +110,7 @@ and (min-width : 1224px) {
 .prof-pic:hover{
     background: rgb(94, 130, 177);
     transition: .3s linear;
-    background: url("../pic/me_dark.png");
+    background: url("../pics/me_dark.png");
     background-size: cover;
 }
 
