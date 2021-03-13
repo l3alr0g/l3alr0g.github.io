@@ -1,0 +1,6 @@
+{
+    "framesize" : {
+        "description" : "Sets the size of the frame on startup",
+        "type": "array"
+    }
+}
