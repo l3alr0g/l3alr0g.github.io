@@ -1,7 +1,11 @@
 {
     "$schema": "https://json-schema.org/draft/2019-09/schema#",
-    "framesize" : {
-        "description" : "Sets the size of the frame on startup",
-        "type": "array"
+    "title" : "Pconsole Settings Profile Schema",
+    "definitions": {
+        "framesize" : {
+            "description" : "Sets the size of the frame on startup",
+            "type": "array"
+        }
     }
+    
 }
