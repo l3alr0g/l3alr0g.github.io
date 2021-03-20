@@ -8,7 +8,7 @@
 }
 
 body {
-    height: 100vh; /* 100% of viewport height */
+    height: 170vh; /* 100% of viewport height */
     background: url("../pics/bg.png") no-repeat center;
     background-size: cover;
     background-color: rgb(27, 28, 30);
@@ -25,6 +25,7 @@ body {
     flex-wrap: wrap;
     flex-basis: auto;
     padding: 40px;
+    position: absolute;
 }
 
 .margin{
