@@ -20,7 +20,6 @@ body {
 .global-container{
     background: rgba(60, 63, 75, 0.24);
     border-radius: 10px;
-    height: 100%;
     width: auto;
     display: flex;
     flex-wrap: wrap;
