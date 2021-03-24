@@ -16,6 +16,10 @@
 </head>
 <body> 
     <script src="../themes/prism.js"></script>
+    <script type="text/javascript"> // load tab 1 by default
+        if (document.location.hash == "" || document.location.hash == "#")
+          document.location.hash = "#tab1";
+    </script>
 
     <div class="surface">
         <div class="surface-header">
@@ -26,31 +30,31 @@
                 <a href="#tab1">
                     <div class="dynbox">
                         <div class="front">Projects</div>
-                        <div class="side">Ideas</div>
+                        <div class="side">Github</div>
                     </div>
                 </a>
                 <a href="#tab2">
                     <div class="dynbox">
                         <div class="front">News</div>
-                        <div class="side">Github</div>
+                        <div class="side">Changelogs</div>
                     </div>
                 </a>
                 <a href="#tab3">
                     <div class="dynbox">
-                        <div class="front">Another tab</div>
-                        <div class="side">tab description</div>
+                        <div class="front">Experiments</div>
+                        <div class="side">electron js</div>
                     </div>
                 </a>
                 <a href="#tab4">
                     <div class="dynbox">
-                        <div class="front">Oi cunt</div>
-                        <div class="side">you better run</div>
+                        <div class="front">Hosted</div>
+                        <div class="side">raw files</div>
                     </div>
                 </a>
                 <a href="#tab5">
                     <div class="dynbox">
-                        <div class="front">Don't click</div>
-                        <div class="side">Pancake</div>
+                        <div class="front">feedback</div>
+                        <div class="side">bug reports</div>
                     </div>
                 </a>
             </div>
@@ -113,5 +117,9 @@
             </div>
         </div>
     </div>
+    <footer>
+        <p>© l3alr0g 2021 - 2022</p>
+    </footer>
 </body>
+
 </html>
