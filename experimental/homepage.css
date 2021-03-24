@@ -63,7 +63,7 @@ and (max-device-width : 480px) {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     flex-wrap: wrap; /* not really usefull */
-    height: 30px;
+    height: auto;
     background: rgb(26, 32, 44);
 }
 .tab-menu a {
@@ -109,6 +109,7 @@ and (max-device-width : 480px) {
     color: rgb(144, 205, 255);
     text-transform: uppercase;
 }
+
 
 /* 3D dynamic box */
 .dynbox {
@@ -156,3 +157,23 @@ and (max-device-width : 480px) {
     transform: rotateX(-90deg) translateZ(15px);
 }
 
+@media only screen  /* smartphone */
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+    .dynbox {
+        -webkit-transform-style: flat;
+        transform-style: flat;
+        transform: none;
+
+        -webkit-transition: none;
+        transition: none;
+    }
+    .dynbox:hover {
+        -webkit-transform: none;
+        transform: none;
+    }
+    .front, .side {
+        -webkit-transform: none;
+        transform: none;
+    }
+}
