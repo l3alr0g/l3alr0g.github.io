@@ -16,10 +16,12 @@
 </head>
 <body> 
     <script src="../themes/prism.js"></script>
+    <script src="./script.js"></script>
     <script type="text/javascript"> // load tab 1 by default
         if (document.location.hash == "" || document.location.hash == "#")
           document.location.hash = "#tab1";
     </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <div class="surface">
         <div class="surface-header">
@@ -65,7 +67,7 @@
                         <p>Do you see any Teletubbies in here? Do you see a slender plastic tag clipped to my shirt with my name printed on it? Do you see a little Asian child with a blank expression on his face sitting outside on a mechanical helicopter that shakes when you put quarters in it? No? Well, that's what you see at a toy store. And you must think you're in a toy store, because you're here shopping for an infant named Jeb.</p>
                         <strong>Batch code embed</strong>
                         <div class="code-block">
-                            <pre><code class="language-batch">
+                            <pre><code class="language-batch" id="clipboard-element">
                                 @echo off
                                 cls
                                 :: if this fails, try : python -m pip install --user --upgrade setuptools wheel
@@ -78,7 +80,8 @@
                                 :: try catch block
                                 python setup.py sdist bdist_wheel 
                                 if %ERRORLEVEL% neq 0 CALL:ProcessError1
-                            </code></pre>
+                                </code></pre>
+                                
                             <style>
                                 code[class*="language-"],
                                 pre[class*="language-"],
@@ -93,7 +96,7 @@
                         <span>Another Sample Title</span>
                         <p>In placerat arcu a ipsum placerat efficitur. Suspendisse euismod ex eu libero sodales finibus. Nunc vehicula nisl hendrerit maximus egestas. Donec sed elit euismod, mollis urna vitae, dapibus massa. Maecenas nec nulla eu mauris congue congue. In vitae massa nibh. Maecenas a facilisis ex. Integer rhoncus felis sapien, vitae luctus enim egestas sit amet. Aenean nec dui libero.</p>
                         <strong>Python code embed</strong>
-                        <pre><code class="language-python">
+                        <pre><code class="language-python" id="clipboard-element">
                             import pconsole
                             commandDic = {"func1_string":func1, # "associated string" : function name
                                         "func2_string":func2
@@ -102,16 +105,34 @@
                             myConsole = pconsole.Console()
                             myConsole.create(commandDic, event = key)
                             # command line is now up and running
-                        </code></pre>
+                            </code>
+                        </pre>
                     </div>
                 </div>
                 <div class="tab" id="tab2">
                     <div class="news-box">
-                        <span>Sample UPPERCASE</span> <br>
-                        <br>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore sit, ullam aliquam minus quam expedita voluptas accusantium numquam nesciunt voluptate possimus iusto nobis repudiandae impedit quod cupiditate, dolores explicabo reiciendis. <br>
-                        <br>
-                        Say what again. Say what again, I dare you, I double-dare you motherfucker, say what one more Goddamn time!
+                        <span>Sample UPPERCASE</span>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore sit, ullam aliquam minus quam expedita voluptas accusantium numquam nesciunt voluptate possimus iusto nobis repudiandae impedit quod cupiditate, dolores explicabo reiciendis. <br>
+                        </p>
+                        <p>
+                            Say what again. Say what again, I dare you, I double-dare you motherfucker, say what one more Goddamn time!
+                        </p>
+                    </div>
+                </div>
+                <div class="tab" id="tab3">
+                    <div class="news-box">
+                        <span>Welcome to the experiments tab</span>
+                        <p>
+                            No experiments available yet
+                        </p>
+                    </div>
+                </div>
+                <div class="tab" id="tab4">
+                    <div class="file-browser-local" id="local-fb">
+                        <div class="file-browser-header-local" id="local-fb-header"></div>
+                        <script>CreateFileDivs('../dl_assets/hosted', "local-fb")</script>
+
                     </div>
                 </div>
             </div>

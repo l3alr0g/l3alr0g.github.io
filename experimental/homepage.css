@@ -30,7 +30,6 @@ body::-webkit-scrollbar-track {
 }
 body::-webkit-scrollbar-thumb {
     background-color: var(--accent);
-    border-radius: 5px;
     border: 1px solid var(--bg);
 }
 
@@ -50,10 +49,6 @@ body::-webkit-scrollbar-thumb {
     0 41.8px 33.4px rgba(0, 0, 0, 0.086),
     0 100px 80px rgba(0, 0, 0, 0.12);
 
-    /* Keyword value */
-    backdrop-filter: none;
-
-    backdrop-filter: url(commonfilters.svg#filter);
     backdrop-filter: blur(2px);
 }
 
@@ -63,6 +58,8 @@ and (max-device-width : 480px) {
     .surface{
         width: 90vw;
         box-shadow: none; /* lighter for smartphone users */
+        backdrop-filter: none;
+        background: rgba(41, 48, 75, 0.678);
     }
 }
 
@@ -104,12 +101,15 @@ and (max-device-width : 480px) {
     display: block;
 }
 
-/* .code-block {
+.file {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    background: rgb(27, 31, 44);
     border-radius: 5px;
-    background: rgb(39, 44, 63);
-    padding: 10px;
     margin: 10px 0px;
-} */
+    padding: 15px;
+}
 
 .news-box {
     display: inherit;
@@ -192,6 +192,9 @@ and (max-device-width : 480px) {
     .front, .side {
         -webkit-transform: none;
         transform: none;
+    }
+    .side {
+        display: none; 
     }
 }
 
