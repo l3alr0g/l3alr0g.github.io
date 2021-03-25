@@ -15,7 +15,7 @@ function getFileList(dir) {
     return new Promise(resolve => {
         setTimeout(() => {
             resolve(files);
-        }, 100);
+        }, 1000);
     });
 }
 

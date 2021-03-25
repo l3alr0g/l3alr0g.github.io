@@ -101,6 +101,10 @@ and (max-device-width : 480px) {
     display: block;
 }
 
+.file-browser-header-local {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
 .file {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 15px;
