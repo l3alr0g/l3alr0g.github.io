@@ -26,8 +26,40 @@ function getFileList(dir) {
  */
 async function CreateFileDivs(dir, parentId) {
     console.log('calling');
-    const fileJSON = await getFileList(dir);
+    let fileJSON
+    try {
+        fileJSON = await getFileList(dir);
+    } catch {
+        console.log('failed to load file list');
+        const header = document.getElementById(parentId + "-header");
+    header.appendChild(document.createTextNode(`Failed to load files`));
+    }
     console.log('got file list');
+
+    const icons = {
+        "png":"fas fa-image",
+        "jpg":"fas fa-image",
+        "jpeg":"fas fa-image",
+        "gif":"fas fa-image",
+        "zip":"far fa-file-archive",
+        "rar":"far fa-file-archive",
+        "gz":"far fa-file-archive",
+        "tar":"far fa-file-archive",
+        "mp4":"fas fa-film",
+        "webm":"fas fa-film",
+        "mkv":"fas fa-film",
+        "wmv":"fas fa-film",
+        "flv":"fas fa-film",
+        "mp3":"fas fa-file-audio",
+        "ogg":"fas fa-file-audio",
+        "m4a":"fas fa-file-audio",
+        "json":"fas fa-file-code",
+        "c":"fas fa-file-code",
+        "py":"fas fa-file-code",
+        "java":"fas fa-file-code",
+        "bat":"fas fa-file-code",
+        "other":"far fa-file"
+    }
 
     const header = document.getElementById(parentId + "-header");
     header.appendChild(document.createTextNode(`${fileJSON.length} files located :`))
@@ -36,8 +68,16 @@ async function CreateFileDivs(dir, parentId) {
         const File_element = document.createElement("div");
         File_element.className = "file";
 
-        const textContent = document.createTextNode(`name : ${fileJSON[i]}`);
+        let ext = fileJSON[i].split(".").pop();
+        const icon = document.createElement("em");
+        icon.className = Object.keys(icons).includes(ext) ? icons[ext] : icons["other"];
+        icon.style.fontSize = "30px";
+        icon.style.marginRight = "20px";
+        File_element.appendChild(icon);
+
+        const textContent = document.createTextNode(fileJSON[i]);
         File_element.appendChild(textContent);
+
         const parentDiv = document.getElementById(parentId);
 
         parentDiv.appendChild(File_element);
