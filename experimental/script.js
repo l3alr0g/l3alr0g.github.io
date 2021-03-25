@@ -27,9 +27,9 @@ function getFileList(dir) {
 async function CreateFileDivs(dir, parentId) {
     console.log('calling');
     let fileJSON
-    try {
-        fileJSON = await getFileList(dir);
-    } catch {
+    fileJSON = await getFileList(dir);
+    
+    if (fileJSON == undefined) {
         console.log('failed to load file list');
         const header = document.getElementById(parentId + "-header");
         header.appendChild(document.createTextNode(`Failed to load files`));
