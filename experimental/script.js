@@ -32,7 +32,8 @@ async function CreateFileDivs(dir, parentId) {
     } catch {
         console.log('failed to load file list');
         const header = document.getElementById(parentId + "-header");
-    header.appendChild(document.createTextNode(`Failed to load files`));
+        header.appendChild(document.createTextNode(`Failed to load files`));
+        return;
     }
     console.log('got file list');
 
