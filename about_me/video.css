@@ -28,6 +28,9 @@ body {
     position: absolute;
 }
 
+.empty {
+    position: relative;
+}
 .margin{
     padding: 20px;
     margin-left: auto;
