@@ -1,0 +1,65 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    box-sizing: content-box;
+    list-style: none;
+}
+
+body{
+    height: 90vh; /* 100% of viewport height */
+    background: url("../pics/behind_the_scenes.png") no-repeat center;
+    background-size: cover;
+    background-color: rgb(41, 40, 54);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.surface {
+    background: rgba(60, 63, 75, 0.24);
+    border-radius: 10px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* margin-top: 3%; */
+    flex-wrap: wrap;
+    padding: 40px;
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+
+    /* Keyword value */
+    backdrop-filter: none;
+
+    backdrop-filter: url(commonfilters.svg#filter);
+    backdrop-filter: blur(2px);
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.message span {
+    font-size: 40px;
+    display: block;
+    margin: 20px;
+}
+.message a {
+    font-size: 100px;
+    margin-top: 25px;
+    text-decoration: none;
+    color: inherit;
+    transition: .1s linear;
+}
+.message a:hover {
+    font-size: 105px;
+    transition: .1s linear;
+}

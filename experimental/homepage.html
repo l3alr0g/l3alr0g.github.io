@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <title>Sandbox</title>
+
+    <script src="https://kit.fontawesome.com/826e821c68.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="../themes/prism.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+
+</head>
+<body> 
+    <script src="../themes/prism.js"></script>
+    <script src="./script.js"></script>
+    <script type="text/javascript"> // load tab 1 by default
+        if (document.location.hash == "" || document.location.hash == "#")
+          document.location.hash = "#tab1";
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <div class="surface">
+        <div class="surface-header">
+            <span>S a n d b o x</span>
+        </div>
+        <div class="surface-body">
+            <div class="tab-menu">
+                <a href="#tab1">
+                    <div class="dynbox">
+                        <div class="front">Projects</div>
+                        <div class="side">Github</div>
+                    </div>
+                </a>
+                <a href="#tab2">
+                    <div class="dynbox">
+                        <div class="front">News</div>
+                        <div class="side">Changelogs</div>
+                    </div>
+                </a>
+                <a href="#tab3">
+                    <div class="dynbox">
+                        <div class="front">Experiments</div>
+                        <div class="side">electron js</div>
+                    </div>
+                </a>
+                <a href="#tab4">
+                    <div class="dynbox">
+                        <div class="front">Hosted</div>
+                        <div class="side">raw files</div>
+                    </div>
+                </a>
+                <a href="#tab5">
+                    <div class="dynbox">
+                        <div class="front">feedback</div>
+                        <div class="side">bug reports</div>
+                    </div>
+                </a>
+            </div>
+            <div class="tab-body">
+                <div class="tab" id="tab1">
+                    <div class="news-box">
+                        <span>Sample Title</span>
+                        <p>Do you see any Teletubbies in here? Do you see a slender plastic tag clipped to my shirt with my name printed on it? Do you see a little Asian child with a blank expression on his face sitting outside on a mechanical helicopter that shakes when you put quarters in it? No? Well, that's what you see at a toy store. And you must think you're in a toy store, because you're here shopping for an infant named Jeb.</p>
+                        <strong>Batch code embed</strong>
+                        <div class="code-block">
+                            <pre><code class="language-batch" id="clipboard-element">
+                                @echo off
+                                cls
+                                :: if this fails, try : python -m pip install --user --upgrade setuptools wheel
+
+                                set "cecho=powershell write-host -fore"
+                                %cecho% Cyan CWD: %cd% 
+
+                                :: updating pip
+                                python -m pip install pip==19.0.1
+                                :: try catch block
+                                python setup.py sdist bdist_wheel 
+                                if %ERRORLEVEL% neq 0 CALL:ProcessError1
+                                </code></pre>
+                                
+                            <style>
+                                code[class*="language-"],
+                                pre[class*="language-"],
+                                span[class*="token"] {
+                                    font-size: .95em;
+                                    border-radius: 5px;
+                                }
+                            </style>
+                        </div>
+                    </div>
+                    <div class="news-box">
+                        <span>Another Sample Title</span>
+                        <p>In placerat arcu a ipsum placerat efficitur. Suspendisse euismod ex eu libero sodales finibus. Nunc vehicula nisl hendrerit maximus egestas. Donec sed elit euismod, mollis urna vitae, dapibus massa. Maecenas nec nulla eu mauris congue congue. In vitae massa nibh. Maecenas a facilisis ex. Integer rhoncus felis sapien, vitae luctus enim egestas sit amet. Aenean nec dui libero.</p>
+                        <strong>Python code embed</strong>
+                        <pre><code class="language-python" id="clipboard-element">
+                            import pconsole
+                            commandDic = {"func1_string":func1, # "associated string" : function name
+                                        "func2_string":func2
+                            }
+                            key = 't' # this key will toggle the console, by default, pconsole will use 'f1'
+                            myConsole = pconsole.Console()
+                            myConsole.create(commandDic, event = key)
+                            # command line is now up and running
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+                <div class="tab" id="tab2">
+                    <div class="news-box">
+                        <span>Sample UPPERCASE</span>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore sit, ullam aliquam minus quam expedita voluptas accusantium numquam nesciunt voluptate possimus iusto nobis repudiandae impedit quod cupiditate, dolores explicabo reiciendis. <br>
+                        </p>
+                        <p>
+                            Say what again. Say what again, I dare you, I double-dare you motherfucker, say what one more Goddamn time!
+                        </p>
+                    </div>
+                </div>
+                <div class="tab" id="tab3">
+                    <div class="news-box">
+                        <span>Welcome to the experiments tab</span>
+                        <p>
+                            No experiments available yet
+                        </p>
+                    </div>
+                </div>
+                <div class="tab" id="tab4">
+                    <div class="file-browser-local" id="local-fb">
+                        <div class="file-browser-header-local" id="local-fb-header"></div>
+                        <script>CreateFileDivs('../dl_assets/hosted', "local-fb")</script>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>© l3alr0g 2021 - 2022</p>
+    </footer>
+</body>
+
+</html>
