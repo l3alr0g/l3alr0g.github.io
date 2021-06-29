@@ -49,6 +49,7 @@ body {
 /* stats card */
 .stats-surface {
   max-width: 400px;
+  width: 95vw;
   margin-top: 40px;
   align-items: center;
   border-radius: 20px;
@@ -56,7 +57,7 @@ body {
   box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
     0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
     0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-    0 100px 80px rgba(0, 0, 0, 0.12);
+    0 100px 95px rgba(0, 0, 0, 0.12);
 }
 
 .stats-footer {
@@ -66,27 +67,31 @@ body {
 
 .stats-footer img {
   max-width: 400px;
+  width: 95vw;
 }
 
 .stats-header {
   background-color: white;
-  padding: 10px 10px 0px 20px;
+  text-align: center;
 }
 
 .stats-header img {
-  max-width: 400px;
+  max-width: 355px;
+  width: 90vw;
+  margin-top: 10px;
 }
 
 /* profile card */
 .profile-surface {
   max-width: 400px;
+  width: 95vw;
   text-align: center;
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
     0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
     0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-    0 100px 80px rgba(0, 0, 0, 0.12);
+    0 100px 95px rgba(0, 0, 0, 0.12);
 }
 
 .surface-header {
@@ -213,6 +218,7 @@ body {
 
 .numbers img {
   max-width: 400px;
+  width: 95vw;
 }
 
 .p-item {
@@ -241,14 +247,14 @@ body {
 }
 
 .menu {
-  width: 80vw;
+  width: 95vw;
   max-width: 400px;
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
     0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
     0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-    0 100px 80px rgba(0, 0, 0, 0.12);
+    0 100px 95px rgba(0, 0, 0, 0.12);
 }
 
 .m-item {
